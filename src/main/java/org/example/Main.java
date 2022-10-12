@@ -24,7 +24,8 @@ public class Main {
 
     public static void main(String[] args) {
         if (args.length < 3) {
-            throw new IllegalArgumentException("Missing arguments\n" + TEXT);
+            System.out.println("Missing arguments\n" + TEXT);
+            System.exit(0);
         }
 
         ExecutorService executorService = Executors.newFixedThreadPool(Short.parseShort(args[2]));
